@@ -6,7 +6,7 @@ export interface Gener{
 }
 
 
-const useGeners = () => useData<Gener>('/ genres');
+const useGeners = () => useData<Gener>('/genres');
 
 
 
