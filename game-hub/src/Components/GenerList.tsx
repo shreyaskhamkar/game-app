@@ -5,13 +5,12 @@ import {
   List,
   ListItem,
   Spinner,
-  Text,
 } from "@chakra-ui/react";
-import useGeners, { Gener } from "../Hooks/useGenres";
+import useGeners, { Genre } from "../Hooks/useGenres";
 import getCroppedImageUrl from "../Services/image-url";
 
 interface Props {
-  onSelectGenre: (genre: Gener) => void;
+  onSelectGenre: (genre: Genre) => void;
 }
 const GenerList = ({ onSelectGenre }: Props) => {
   const { data, isLoading, error } = useGeners();
